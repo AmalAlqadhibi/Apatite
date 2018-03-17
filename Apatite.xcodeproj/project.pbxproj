@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34082A2A500E80686210DFBD /* Pods_Apatite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689EBDBAC65E61EF10FB8BD3 /* Pods_Apatite.framework */; };
+		6293D2A80E851DCBC539A13D /* Pods_ApatiteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FC7193BFD06B4DEDD9B28 /* Pods_ApatiteUITests.framework */; };
+		A606EDAD43747AEA6600482A /* Pods_ApatiteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C6BAED0218F6EBB6F75F14 /* Pods_ApatiteTests.framework */; };
+		D500C276205C27B500637752 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500C275205C27B500637752 /* SignUpViewController.swift */; };
 		D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */; };
 		D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B94A2056CA8F00CAE5C7 /* ViewController.swift */; };
 		D515B94E2056CA8F00CAE5C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515B94C2056CA8F00CAE5C7 /* Main.storyboard */; };
@@ -14,6 +18,9 @@
 		D515B9532056CA8F00CAE5C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */; };
 		D515B95E2056CA8F00CAE5C7 /* ApatiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B95D2056CA8F00CAE5C7 /* ApatiteTests.swift */; };
 		D515B9692056CA8F00CAE5C7 /* ApatiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */; };
+		D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775227205D1B3C00370969 /* Poppins-Light.ttf */; };
+		D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775229205D1CFA00370969 /* Poppins-Bold.ttf */; };
+		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35D1690742B82EE998F99147 /* Pods-ApatiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		369B9B04FC9F0FBEB26B02CA /* Pods-ApatiteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteTests/Pods-ApatiteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		467961E02371C907C0164FA6 /* Pods-ApatiteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6572DA15516E6B44F5F246F4 /* Pods-ApatiteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteTests/Pods-ApatiteTests.release.xcconfig"; sourceTree = "<group>"; };
+		689EBDBAC65E61EF10FB8BD3 /* Pods_Apatite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apatite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CFCD81037FBE519FBDF6EA /* Pods-Apatite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apatite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apatite/Pods-Apatite.debug.xcconfig"; sourceTree = "<group>"; };
+		70B80243B25B5C9220676BEA /* Pods-Apatite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apatite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apatite/Pods-Apatite.release.xcconfig"; sourceTree = "<group>"; };
+		A17FC7193BFD06B4DEDD9B28 /* Pods_ApatiteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApatiteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C6BAED0218F6EBB6F75F14 /* Pods_ApatiteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApatiteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D500C275205C27B500637752 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D515B9452056CA8F00CAE5C7 /* Apatite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apatite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D515B94A2056CA8F00CAE5C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,9 @@
 		D515B9642056CA8F00CAE5C7 /* ApatiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApatiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApatiteUITests.swift; sourceTree = "<group>"; };
 		D515B96A2056CA8F00CAE5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5775227205D1B3C00370969 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		D5775229205D1CFA00370969 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34082A2A500E80686210DFBD /* Pods_Apatite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A606EDAD43747AEA6600482A /* Pods_ApatiteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6293D2A80E851DCBC539A13D /* Pods_ApatiteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7289372DB0EB7971235131A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				689EBDBAC65E61EF10FB8BD3 /* Pods_Apatite.framework */,
+				B8C6BAED0218F6EBB6F75F14 /* Pods_ApatiteTests.framework */,
+				A17FC7193BFD06B4DEDD9B28 /* Pods_ApatiteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC05838431E56C5840FC851F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68CFCD81037FBE519FBDF6EA /* Pods-Apatite.debug.xcconfig */,
+				70B80243B25B5C9220676BEA /* Pods-Apatite.release.xcconfig */,
+				369B9B04FC9F0FBEB26B02CA /* Pods-ApatiteTests.debug.xcconfig */,
+				6572DA15516E6B44F5F246F4 /* Pods-ApatiteTests.release.xcconfig */,
+				467961E02371C907C0164FA6 /* Pods-ApatiteUITests.debug.xcconfig */,
+				35D1690742B82EE998F99147 /* Pods-ApatiteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D515B93C2056CA8E00CAE5C7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +127,8 @@
 				D515B95C2056CA8F00CAE5C7 /* ApatiteTests */,
 				D515B9672056CA8F00CAE5C7 /* ApatiteUITests */,
 				D515B9462056CA8F00CAE5C7 /* Products */,
+				CC05838431E56C5840FC851F /* Pods */,
+				7289372DB0EB7971235131A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +146,15 @@
 			isa = PBXGroup;
 			children = (
 				D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */,
+				D500C275205C27B500637752 /* SignUpViewController.swift */,
 				D515B94A2056CA8F00CAE5C7 /* ViewController.swift */,
 				D515B94C2056CA8F00CAE5C7 /* Main.storyboard */,
 				D515B94F2056CA8F00CAE5C7 /* Assets.xcassets */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
+				D5D47083205C936D001E941F /* GoogleService-Info.plist */,
 				D515B9542056CA8F00CAE5C7 /* Info.plist */,
+				D5775227205D1B3C00370969 /* Poppins-Light.ttf */,
+				D5775229205D1CFA00370969 /* Poppins-Bold.ttf */,
 			);
 			path = Apatite;
 			sourceTree = "<group>";
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D515B96D2056CA8F00CAE5C7 /* Build configuration list for PBXNativeTarget "Apatite" */;
 			buildPhases = (
+				FA185119D6CFE9E686058092 /* [CP] Check Pods Manifest.lock */,
 				D515B9412056CA8F00CAE5C7 /* Sources */,
 				D515B9422056CA8F00CAE5C7 /* Frameworks */,
 				D515B9432056CA8F00CAE5C7 /* Resources */,
+				8821E432217C7E7CED5EF88B /* [CP] Embed Pods Frameworks */,
+				106E4C39097F6874B2D39A97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D515B9702056CA8F00CAE5C7 /* Build configuration list for PBXNativeTarget "ApatiteTests" */;
 			buildPhases = (
+				7D38CBF059AF1B04CA1D0510 /* [CP] Check Pods Manifest.lock */,
 				D515B9552056CA8F00CAE5C7 /* Sources */,
 				D515B9562056CA8F00CAE5C7 /* Frameworks */,
 				D515B9572056CA8F00CAE5C7 /* Resources */,
+				30A7B29DABC718F220CF0716 /* [CP] Embed Pods Frameworks */,
+				08BE7C2E195AD71FF661E456 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D515B9732056CA8F00CAE5C7 /* Build configuration list for PBXNativeTarget "ApatiteUITests" */;
 			buildPhases = (
+				0006B8CA28CECB12639FF784 /* [CP] Check Pods Manifest.lock */,
 				D515B9602056CA8F00CAE5C7 /* Sources */,
 				D515B9612056CA8F00CAE5C7 /* Frameworks */,
 				D515B9622056CA8F00CAE5C7 /* Resources */,
+				FD3D20B67989248C96528693 /* [CP] Embed Pods Frameworks */,
+				ECDA6E9E451CC399AF94F680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D515B9532056CA8F00CAE5C7 /* LaunchScreen.storyboard in Resources */,
+				D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */,
+				D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */,
+				D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */,
 				D515B9502056CA8F00CAE5C7 /* Assets.xcassets in Resources */,
 				D515B94E2056CA8F00CAE5C7 /* Main.storyboard in Resources */,
 			);
@@ -254,11 +318,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0006B8CA28CECB12639FF784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApatiteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08BE7C2E195AD71FF661E456 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApatiteTests/Pods-ApatiteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		106E4C39097F6874B2D39A97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Apatite/Pods-Apatite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30A7B29DABC718F220CF0716 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApatiteTests/Pods-ApatiteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D38CBF059AF1B04CA1D0510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApatiteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8821E432217C7E7CED5EF88B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Apatite/Pods-Apatite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Apatite/Pods-Apatite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECDA6E9E451CC399AF94F680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA185119D6CFE9E686058092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apatite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3D20B67989248C96528693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D515B9412056CA8F00CAE5C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D500C276205C27B500637752 /* SignUpViewController.swift in Sources */,
 				D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +645,7 @@
 		};
 		D515B96E2056CA8F00CAE5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68CFCD81037FBE519FBDF6EA /* Pods-Apatite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +660,7 @@
 		};
 		D515B96F2056CA8F00CAE5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B80243B25B5C9220676BEA /* Pods-Apatite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +675,7 @@
 		};
 		D515B9712056CA8F00CAE5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369B9B04FC9F0FBEB26B02CA /* Pods-ApatiteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +692,7 @@
 		};
 		D515B9722056CA8F00CAE5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6572DA15516E6B44F5F246F4 /* Pods-ApatiteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +709,7 @@
 		};
 		D515B9742056CA8F00CAE5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467961E02371C907C0164FA6 /* Pods-ApatiteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +725,7 @@
 		};
 		D515B9752056CA8F00CAE5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D1690742B82EE998F99147 /* Pods-ApatiteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
