@@ -20,6 +20,9 @@
 		D515B9692056CA8F00CAE5C7 /* ApatiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */; };
 		D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775227205D1B3C00370969 /* Poppins-Light.ttf */; };
 		D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775229205D1CFA00370969 /* Poppins-Bold.ttf */; };
+		D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522B205D6C4D00370969 /* LoginViewController.swift */; };
+		D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522D205D7D2400370969 /* ResetPasswordViewController.swift */; };
+		D5775230205DB3B200370969 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522F205DB3B200370969 /* UserAccountViewController.swift */; };
 		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		D515B96A2056CA8F00CAE5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5775227205D1B3C00370969 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		D5775229205D1CFA00370969 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		D577522B205D6C4D00370969 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D577522D205D7D2400370969 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		D577522F205DB3B200370969 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +153,10 @@
 			children = (
 				D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */,
 				D500C275205C27B500637752 /* SignUpViewController.swift */,
+				D577522B205D6C4D00370969 /* LoginViewController.swift */,
+				D577522D205D7D2400370969 /* ResetPasswordViewController.swift */,
 				D515B94A2056CA8F00CAE5C7 /* ViewController.swift */,
+				D577522F205DB3B200370969 /* UserAccountViewController.swift */,
 				D515B94C2056CA8F00CAE5C7 /* Main.storyboard */,
 				D515B94F2056CA8F00CAE5C7 /* Assets.xcassets */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
@@ -479,9 +488,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */,
 				D500C276205C27B500637752 /* SignUpViewController.swift in Sources */,
+				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
 				D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
+				D5775230205DB3B200370969 /* UserAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
