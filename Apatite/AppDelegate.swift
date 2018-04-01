@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Poppins-Light", size: 20)!
-        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Poppins-Light", size: 20)!]
+        
         // Override point for customization after application launch.
         return true
     }
@@ -48,4 +49,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
+/*
+let tabBarController = UITabBarController()
+let tabbar = tabBarController.tabBar
+Auth.auth().addStateDidChangeListener { (auth, user) in
+    if user != nil {
+        let controlrs = self.setViewControllers
+        controlrs.removeObjectAtIndex(2)
+        // user is signed in
+        //    performSegue(withIdentifier: "UserLogIn", sender: self)
+        
+    } else {
+        //      performSegue(withIdentifier: "NotLogIn", sender: self)
+    }
+    // ...
+}
+*/

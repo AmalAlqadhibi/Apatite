@@ -14,16 +14,21 @@
 		D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */; };
 		D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B94A2056CA8F00CAE5C7 /* ViewController.swift */; };
 		D515B94E2056CA8F00CAE5C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515B94C2056CA8F00CAE5C7 /* Main.storyboard */; };
-		D515B9502056CA8F00CAE5C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D515B94F2056CA8F00CAE5C7 /* Assets.xcassets */; };
 		D515B9532056CA8F00CAE5C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */; };
 		D515B95E2056CA8F00CAE5C7 /* ApatiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B95D2056CA8F00CAE5C7 /* ApatiteTests.swift */; };
 		D515B9692056CA8F00CAE5C7 /* ApatiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */; };
+		D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544914F2070BD770033B3A3 /* TabBarViewController.swift */; };
+		D54DA3532067FF9700B9A079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54DA3522067FF9700B9A079 /* Assets.xcassets */; };
 		D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775227205D1B3C00370969 /* Poppins-Light.ttf */; };
 		D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775229205D1CFA00370969 /* Poppins-Bold.ttf */; };
 		D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522B205D6C4D00370969 /* LoginViewController.swift */; };
 		D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522D205D7D2400370969 /* ResetPasswordViewController.swift */; };
-		D5775230205DB3B200370969 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522F205DB3B200370969 /* UserAccountViewController.swift */; };
+		D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D588AD482067D1A50077956D /* TableViewCell.swift */; };
+		D588AD4B2067D1A50077956D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D588AD492067D1A50077956D /* TableViewCell.xib */; };
+		D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */; };
+		D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */; };
 		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
+		D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +63,6 @@
 		D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D515B94A2056CA8F00CAE5C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D515B94D2056CA8F00CAE5C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D515B94F2056CA8F00CAE5C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D515B9522056CA8F00CAE5C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D515B9542056CA8F00CAE5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D515B9592056CA8F00CAE5C7 /* ApatiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApatiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,12 +71,18 @@
 		D515B9642056CA8F00CAE5C7 /* ApatiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApatiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApatiteUITests.swift; sourceTree = "<group>"; };
 		D515B96A2056CA8F00CAE5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D544914F2070BD770033B3A3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D54DA3522067FF9700B9A079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5775227205D1B3C00370969 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		D5775229205D1CFA00370969 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		D577522B205D6C4D00370969 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D577522D205D7D2400370969 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		D577522F205DB3B200370969 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		D588AD482067D1A50077956D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D588AD492067D1A50077956D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountTableViewController.swift; sourceTree = "<group>"; };
+		D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNotLogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,14 +161,18 @@
 		D515B9472056CA8F00CAE5C7 /* Apatite */ = {
 			isa = PBXGroup;
 			children = (
+				D588AD472067D1540077956D /* cell */,
 				D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */,
+				D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */,
 				D500C275205C27B500637752 /* SignUpViewController.swift */,
 				D577522B205D6C4D00370969 /* LoginViewController.swift */,
 				D577522D205D7D2400370969 /* ResetPasswordViewController.swift */,
 				D515B94A2056CA8F00CAE5C7 /* ViewController.swift */,
-				D577522F205DB3B200370969 /* UserAccountViewController.swift */,
+				D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */,
+				D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */,
+				D544914F2070BD770033B3A3 /* TabBarViewController.swift */,
+				D54DA3522067FF9700B9A079 /* Assets.xcassets */,
 				D515B94C2056CA8F00CAE5C7 /* Main.storyboard */,
-				D515B94F2056CA8F00CAE5C7 /* Assets.xcassets */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
 				D5D47083205C936D001E941F /* GoogleService-Info.plist */,
 				D515B9542056CA8F00CAE5C7 /* Info.plist */,
@@ -184,6 +198,15 @@
 				D515B96A2056CA8F00CAE5C7 /* Info.plist */,
 			);
 			path = ApatiteUITests;
+			sourceTree = "<group>";
+		};
+		D588AD472067D1540077956D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D588AD482067D1A50077956D /* TableViewCell.swift */,
+				D588AD492067D1A50077956D /* TableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +327,10 @@
 			files = (
 				D515B9532056CA8F00CAE5C7 /* LaunchScreen.storyboard in Resources */,
 				D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */,
+				D588AD4B2067D1A50077956D /* TableViewCell.xib in Resources */,
 				D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */,
+				D54DA3532067FF9700B9A079 /* Assets.xcassets in Resources */,
 				D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */,
-				D515B9502056CA8F00CAE5C7 /* Assets.xcassets in Resources */,
 				D515B94E2056CA8F00CAE5C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +442,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Apatite/Pods-Apatite-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Letters/Letters.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -425,6 +450,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Letters.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -490,10 +516,14 @@
 			files = (
 				D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */,
 				D500C276205C27B500637752 /* SignUpViewController.swift in Sources */,
+				D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */,
 				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
+				D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */,
+				D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */,
 				D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */,
+				D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
-				D5775230205DB3B200370969 /* UserAccountViewController.swift in Sources */,
+				D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

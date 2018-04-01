@@ -62,10 +62,11 @@ class LoginViewController: UIViewController {
                 if error == nil {
                     //Print into the console if successfully logged in
                     print("You have successfully logged in")
-                    
+                 self.performSegue(withIdentifier: "UserAccount", sender: nil)
                     //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
-                    self.present(vc!, animated: true, completion: nil)
+                 //  let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserAccount")
+                 
+               //   self.present(vc!, animated: true, completion: nil)
                 }
                 else {
                     //Tells the user that there is an error and then gets firebase to tell them the error

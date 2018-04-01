@@ -82,16 +82,17 @@ class SignUpViewController: UIViewController {
                 return
             }
             else{
-                
-//                Here I shuld put the id of Account ViewController
-//                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Account")
-//                self.present(vc!, animated: true, completion: nil)
+                let info = ["username": self.Name.text! , "email": self.Email.text!,"phoneNumber": self.PhoneNum.text!,"Address1": self.Address1.text!,"Address2": self.Address2.text!,"city": self.City.text! ]
+                let uid = user?.uid
+                let ref = Database.database().reference()
+                 ref.child("users").child(uid!).setValue(info)
+//                let usersReference = ref.child("users")
+//                let newUserReference = usersReference.child(uid!)
+//                newUserReference.setValue(["username": self.Name.text! , "email": self.Email.text!,"phoneNumber": self.PhoneNum.text!,"Address1": self.Address1.text!,"Address2": self.Address2.text!,"city": self.City.text! ])
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserAccount")
+                self.present(vc!, animated: true, completion: nil)
             }
-            let uid = user?.uid
-            let ref = Database.database().reference()
-            let usersReference = ref.child("users")
-            let newUserReference = usersReference.child(uid!)
-            newUserReference.setValue(["username": self.Name.text! , "email": self.Email.text!,"phoneNumber": self.PhoneNum.text!,"Address1": self.Address1.text!,"Address2": self.Address2.text!,"city": self.City.text! ])
+          
         })}
 
         }
