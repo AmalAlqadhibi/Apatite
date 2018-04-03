@@ -7,9 +7,35 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
+
 
 class HomeViewController: UIViewController {
 
+    
+        
+        
+        @IBAction func RentFormButton(_ sender: Any) {
+            
+            Auth.auth().addStateDidChangeListener { auth, user in
+                if Auth.auth().currentUser != nil {
+                    self.performSegue(withIdentifier: "showform", sender: nil)
+                }
+                else {
+                    let alertController = UIAlertController(title: "Error", message: "please create account", preferredStyle: .alert)
+                    
+                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
