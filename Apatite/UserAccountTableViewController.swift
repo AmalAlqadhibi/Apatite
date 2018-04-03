@@ -13,10 +13,11 @@ import FirebaseDatabase
 class UserAccountTableViewController: UITableViewController {
    // var userProfile = ["My orders","My producte", "My information","FAQ","Term & conditions -Privacy Policy", "Log out"]
     @IBOutlet weak var UserName: UILabel!
- 
+ @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.isTranslucent = false
+        self.tabBarController?.navigationItem.hidesBackButton = true
+       // self.tabBarController?.tabBar.isTranslucent = false
 checkIfUserIsLogIn()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,8 +34,8 @@ checkIfUserIsLogIn()
             let uid = Auth.auth().currentUser?.uid
             Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with:{(snapshot) in
                 if let dictionary = snapshot.value as? [String: AnyObject]{
-                    let Name = dictionary["username"] as? String
-                    self.UserName.text = Name
+                    let Name = dictionary["username"] as! String
+                      self.UserName.text = Name  
                 }}, withCancel: nil)}
         //        AccountImg?.setImage(string: "Amal Alqadhibi", color: .random, circular: true, textAttributes: [NSAttributedStringKey.font: UIFont(name: "Poppins-Light", size: 16) , NSAttributedStringKey.foregroundColor: UIColor.white])
         

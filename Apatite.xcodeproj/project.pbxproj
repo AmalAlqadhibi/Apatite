@@ -25,6 +25,10 @@
 		D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522D205D7D2400370969 /* ResetPasswordViewController.swift */; };
 		D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D588AD482067D1A50077956D /* TableViewCell.swift */; };
 		D588AD4B2067D1A50077956D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D588AD492067D1A50077956D /* TableViewCell.xib */; };
+		D5A050912071892000B45F68 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A050902071892000B45F68 /* HomeViewController.swift */; };
+		D5A050932071893100B45F68 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A050922071893100B45F68 /* SearchViewController.swift */; };
+		D5A05095207189F400B45F68 /* AddToBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A05094207189F400B45F68 /* AddToBagViewController.swift */; };
+		D5A05097207211E300B45F68 /* AddNewAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */; };
 		D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */; };
 		D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */; };
 		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
@@ -79,6 +83,10 @@
 		D577522D205D7D2400370969 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		D588AD482067D1A50077956D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D588AD492067D1A50077956D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D5A050902071892000B45F68 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D5A050922071893100B45F68 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D5A05094207189F400B45F68 /* AddToBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBagViewController.swift; sourceTree = "<group>"; };
+		D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAdminViewController.swift; sourceTree = "<group>"; };
 		D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountTableViewController.swift; sourceTree = "<group>"; };
 		D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -165,14 +173,18 @@
 				D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */,
 				D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */,
 				D500C275205C27B500637752 /* SignUpViewController.swift */,
+				D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */,
 				D577522B205D6C4D00370969 /* LoginViewController.swift */,
 				D577522D205D7D2400370969 /* ResetPasswordViewController.swift */,
 				D515B94A2056CA8F00CAE5C7 /* ViewController.swift */,
 				D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */,
 				D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */,
 				D544914F2070BD770033B3A3 /* TabBarViewController.swift */,
+				D5A05094207189F400B45F68 /* AddToBagViewController.swift */,
 				D54DA3522067FF9700B9A079 /* Assets.xcassets */,
 				D515B94C2056CA8F00CAE5C7 /* Main.storyboard */,
+				D5A050902071892000B45F68 /* HomeViewController.swift */,
+				D5A050922071893100B45F68 /* SearchViewController.swift */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
 				D5D47083205C936D001E941F /* GoogleService-Info.plist */,
 				D515B9542056CA8F00CAE5C7 /* Info.plist */,
@@ -519,8 +531,12 @@
 				D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */,
 				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
 				D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */,
+				D5A05097207211E300B45F68 /* AddNewAdminViewController.swift in Sources */,
 				D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */,
+				D5A050932071893100B45F68 /* SearchViewController.swift in Sources */,
 				D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */,
+				D5A050912071892000B45F68 /* HomeViewController.swift in Sources */,
+				D5A05095207189F400B45F68 /* AddToBagViewController.swift in Sources */,
 				D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
 				D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */,

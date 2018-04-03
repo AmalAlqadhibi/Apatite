@@ -59,12 +59,9 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     @IBAction func CreateAccountAction(_ sender: Any) {
         if Email.text == "" {
             let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
-            
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             present(alertController, animated: true, completion: nil)
@@ -82,15 +79,16 @@ class SignUpViewController: UIViewController {
                 return
             }
             else{
-                let info = ["username": self.Name.text! , "email": self.Email.text!,"phoneNumber": self.PhoneNum.text!,"Address1": self.Address1.text!,"Address2": self.Address2.text!,"city": self.City.text! ]
+                let info = ["accountType": "User","username": self.Name.text! , "email": self.Email.text!,"phoneNumber": self.PhoneNum.text!,"Address1": self.Address1.text!,"Address2": self.Address2.text!,"city": self.City.text! ]
                 let uid = user?.uid
                 let ref = Database.database().reference()
                  ref.child("users").child(uid!).setValue(info)
+                self.performSegue(withIdentifier: "UserAccount1", sender: nil)
 //                let usersReference = ref.child("users")
 //                let newUserReference = usersReference.child(uid!)
 //                newUserReference.setValue(["username": self.Name.text! , "email": self.Email.text!,"phoneNumber": self.PhoneNum.text!,"Address1": self.Address1.text!,"Address2": self.Address2.text!,"city": self.City.text! ])
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserAccount")
-                self.present(vc!, animated: true, completion: nil)
+             //   let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserAccount")
+             //   self.present(vc!, animated: true, completion: nil)
             }
           
         })}

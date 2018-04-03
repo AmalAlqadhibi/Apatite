@@ -14,12 +14,42 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-   //     let tabBarController = UITabBarController()
-        
-     //   Auth.auth().addStateDidChangeListener { (auth, user) in if user != nil {
-     //         let userAccountTableViewController = UserAccountTableViewController()
-            
-//                userAccountTableViewController.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "Account"), tag: 3)
+//        let homeViewController = HomeViewController()
+//        homeViewController.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "Apatite logo"), tag: 0)
+//        let searchViewController = SearchViewController()
+//        searchViewController.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "Search "), tag: 1)
+//        let addToBagViewController = AddToBagViewController()
+//        addToBagViewController.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "Add2Bag"), tag: 2)
+//
+//
+//   //     let tabBarController = UITabBarController()
+//
+//        Auth.auth().addStateDidChangeListener { (auth, user) in if user != nil {
+//
+//
+//              //  let userAccountTableViewController = UserAccountTableViewController() logInAndJoin
+//            guard var userAccountTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserLogIn") else
+//            {
+//                return
+//            }
+//            userAccountTableViewController = UserAccountTableViewController()
+//            userAccountTableViewController.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "Account"), tag: 3)
+//            let viewControllerList = [ homeViewController, searchViewController, addToBagViewController, userAccountTableViewController]
+//            self.viewControllers = viewControllerList
+//
+//        } else {
+//            guard var accountNotLogInViewController = self.storyboard?.instantiateViewController(withIdentifier: "logInAndJoin") else
+//            {
+//                return
+//            }
+//             accountNotLogInViewController = AccountNotLogInViewController()
+//                        accountNotLogInViewController.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "Account"), tag: 3)
+//            self.setViewControllers([homeViewController, searchViewController,addToBagViewController, accountNotLogInViewController], animated: true)
+//           // let viewControllerList = [ homeViewController, searchViewController, addToBagViewController, accountNotLogInViewController]
+//          //  self.viewControllers = viewControllerList
+//            }
+    
+//}
                 // user is signed in
                 //    performSegue(withIdentifier: "UserLogIn", sender: self)
         

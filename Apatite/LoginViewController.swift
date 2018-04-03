@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 extension UIButton {
     func underline() {
         guard let text = self.titleLabel?.text else { return }
@@ -26,6 +27,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+          self.tabBarController?.navigationItem.hidesBackButton = true
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         Password.setBorder()
         Email.setBorder()
         
@@ -45,9 +48,9 @@ class LoginViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
+   
     @IBAction func loginAction(_ sender: Any) {
-
+ let ref = Database.database().reference()
         //check if the textfield empty
         if self.Email.text == "" || self.Password.text == "" {
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields
@@ -60,9 +63,24 @@ class LoginViewController: UIViewController {
         } else {
             Auth.auth().signIn(withEmail: self.Email.text!, password: self.Password.text!) { (user, error) in
                 if error == nil {
+                      let uid = user?.uid
+                    Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with:{(snapshot) in
+                        if let dictionary = snapshot.value as? [String: AnyObject] {
+                            let accountType = dictionary["accountType"] as! String
+                            if  accountType == "User"{
+                                self.performSegue(withIdentifier: "UserAccount", sender: nil)
+                                
+                            }else{
+                                  self.performSegue(withIdentifier: "Admin", sender: nil)
+                            }
+                          
+                        }}, withCancel: nil)
+                    
+                    //ref.child("users").child(uid!).queryEqual(toValue: uid?)
+//
                     //Print into the console if successfully logged in
                     print("You have successfully logged in")
-                 self.performSegue(withIdentifier: "UserAccount", sender: nil)
+              //   self.performSegue(withIdentifier: "UserAccount", sender: nil)
                     //Go to the HomeViewController if the login is sucessful
                  //  let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserAccount")
                  
