@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uWj-d1-fiB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P8A-Ek-M55">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -66,8 +66,8 @@
                                         <state key="normal" title="SIGN IN"/>
                                         <connections>
                                             <action selector="CreateAccountAction:" destination="Lgx-oS-lS0" eventType="touchUpInside" id="LDE-zx-WVq"/>
-                                            <segue destination="AVh-Uz-2DJ" kind="popoverPresentation" popoverAnchorView="Hzy-Pc-Faa" id="5SJ-oI-9aN">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            <segue destination="P8A-Ek-M55" kind="popoverPresentation" popoverAnchorView="Hzy-Pc-Faa" id="XKC-X1-5D0">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
                                             </segue>
                                         </connections>
                                     </button>
@@ -205,7 +205,7 @@
                                         <state key="normal" title="Join"/>
                                         <connections>
                                             <action selector="CreateAccountAction:" destination="Lgx-oS-lS0" eventType="touchUpInside" id="VaW-gF-m9K"/>
-                                            <segue destination="kjQ-qU-GhK" kind="show" identifier="UserAccount1" id="VA5-B4-gAf"/>
+                                            <segue destination="kjQ-qU-GhK" kind="showDetail" identifier="UserAccount1" action="showViewController:sender:" id="VA5-B4-gAf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -281,6 +281,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="cC2-8N-Dah">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNh-lm-zkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="uWj-d1-fiB" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jEj-yv-jME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -295,7 +296,6 @@
                         <segue destination="HeK-XL-Whg" kind="relationship" relationship="viewControllers" id="FFk-i6-AXg"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pNh-lm-zkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306" y="-884"/>
         </scene>
@@ -401,7 +401,7 @@
                     <connections>
                         <outlet property="Email" destination="Tbr-Rz-Xmp" id="zhw-dV-FE8"/>
                         <outlet property="Password" destination="J8i-Dr-faf" id="slP-yW-JmO"/>
-                        <segue destination="kjQ-qU-GhK" kind="show" identifier="UserAccount" id="O2X-4E-OwH"/>
+                        <segue destination="kjQ-qU-GhK" kind="showDetail" identifier="UserAccount" action="showViewController:sender:" id="O2X-4E-OwH"/>
                         <segue destination="Yd1-2g-ijM" kind="show" identifier="Admin" id="xih-iy-9pF"/>
                     </connections>
                 </viewController>
@@ -721,6 +721,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="UserName" destination="L9e-BO-xEm" id="rUn-WC-s07"/>
                     </connections>
@@ -784,7 +785,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReX-43-LeS">
                                         <rect key="frame" x="0.0" y="336" width="315" height="24"/>
@@ -799,7 +800,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="street-address"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1t-0w-mdm">
                                         <rect key="frame" x="0.0" y="448" width="315" height="24"/>
@@ -814,7 +815,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="street-address"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5Y-MD-uU6">
                                         <rect key="frame" x="0.0" y="560" width="315" height="24"/>
@@ -859,7 +860,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5p3-2i-7Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="2588"/>
+            <point key="canvasLocation" x="2511.1999999999998" y="2718.440779610195"/>
         </scene>
         <!--My Products-->
         <scene sceneID="6eW-zg-Vdf">
@@ -887,7 +888,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mX-be-CrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="2490"/>
+            <point key="canvasLocation" x="3242.4000000000001" y="2489.5052473763121"/>
         </scene>
         <!--My orders-->
         <scene sceneID="s72-OH-GOs">
@@ -916,28 +917,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37q-AG-VHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2748" y="1717"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mWG-dh-1Bk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AVh-Uz-2DJ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="pJF-Ki-fBV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N8h-Wd-W5O">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nSM-sb-bLU">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="P8A-Ek-M55" kind="relationship" relationship="rootViewController" id="LEU-Gh-KBJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CJh-my-0ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-751" y="974"/>
         </scene>
         <!--My Account-->
         <scene sceneID="OT0-W6-dXr">
@@ -1130,7 +1109,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKr-aG-fZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="yzt-4s-dWv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4002" y="1941"/>
+            <point key="canvasLocation" x="4679.1999999999998" y="1940.7796101949027"/>
         </scene>
         <!--Admin-->
         <scene sceneID="bti-af-Spb">
@@ -1210,6 +1189,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pc2-iM-4Oy" kind="show" id="EpZ-t4-NlB"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Z0U-V8-J68" imageView="Brg-am-rma" style="IBUITableViewCellStyleDefault" id="Mdq-fW-xpk">
                                         <rect key="frame" x="0.0" y="321" width="375" height="59"/>
@@ -1303,7 +1285,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDA-07-SXz">
                                         <rect key="frame" x="0.0" y="59" width="315" height="30"/>
@@ -1330,7 +1312,7 @@
                                             <constraint firstAttribute="height" constant="44" id="wFp-Sa-KkZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
-                                        <state key="normal" title="SAVE CHANGES"/>
+                                        <state key="normal" title="Add New Admin"/>
                                         <connections>
                                             <action selector="AddNewAction:" destination="thd-dU-phv" eventType="touchUpInside" id="VLB-qS-pF4"/>
                                         </connections>
@@ -1356,16 +1338,254 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpi-n6-kul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="2211"/>
+            <point key="canvasLocation" x="1119.2" y="2440.9295352323838"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="pmS-v1-P8b">
+            <objects>
+                <tableViewController title="Products" id="Pgm-gO-Jeb" customClass="ProductsTableViewController" customModule="Apatite" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y92-US-AyQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ERE-hI-zXn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ERE-hI-zXn" id="eXG-Mq-8mF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pgm-gO-Jeb" id="CLQ-VH-FRa"/>
+                            <outlet property="delegate" destination="Pgm-gO-Jeb" id="Nm8-Ji-gTf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Products" id="CPt-uS-uU5">
+                        <barButtonItem key="rightBarButtonItem" image="Add New Product " id="xsM-wH-5o7">
+                            <connections>
+                                <segue destination="7Mi-Jl-hiN" kind="popoverPresentation" popoverAnchorBarButtonItem="xsM-wH-5o7" id="L2Z-i4-PnY">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4q-cx-mrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1777" y="2490"/>
+        </scene>
+        <!--Add New Products-->
+        <scene sceneID="X9t-SO-05a">
+            <objects>
+                <viewController title="Add New Products" id="HJe-HP-8sa" customClass="AddNewProductViewController" customModule="Apatite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHq-fj-0tP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="940"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="725-WT-UvY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="876"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMd-ao-q1J">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="940"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="940" id="3BA-tL-DOL"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-Kk-LOy">
+                                        <rect key="frame" x="30" y="30" width="315" height="752"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pruduct Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVQ-A1-uPS">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8I-G1-SF8" userLabel="Name">
+                                                <rect key="frame" x="0.0" y="47" width="315" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="oL7-PX-HrJ"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rental Duration: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCB-PZ-ig4">
+                                                <rect key="frame" x="0.0" y="100" width="315" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UcX-ZO-yUp">
+                                                <rect key="frame" x="0.0" y="147" width="315" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="JxL-nR-w9C"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Size: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V49-zo-NJ3">
+                                                <rect key="frame" x="0.0" y="200" width="315" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlQ-iE-CfI" userLabel="Size">
+                                                <rect key="frame" x="0.0" y="247" width="315" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ZrK-4R-4TY"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Brand: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIy-t9-hq2">
+                                                <rect key="frame" x="0.0" y="300" width="315" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQd-DW-dfv" userLabel="Brand">
+                                                <rect key="frame" x="0.0" y="347" width="315" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="tD9-3q-qjf"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rental Price: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJs-B5-sPG" userLabel="Product Brand:">
+                                                <rect key="frame" x="0.0" y="400" width="315" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDZ-Ko-59R" userLabel="RentalPrice">
+                                                <rect key="frame" x="0.0" y="447" width="315" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="lRN-Ks-A0f"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image of prodduct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwY-qN-vZr">
+                                                <rect key="frame" x="0.0" y="500" width="315" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImagePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Jsf-Vt-HZS">
+                                                <rect key="frame" x="0.0" y="547" width="315" height="138"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="138" id="3s3-Ps-Qcn"/>
+                                                    <constraint firstAttribute="width" constant="315" id="WeX-0f-0Nv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pV-Y1-dKc">
+                                                <rect key="frame" x="0.0" y="708" width="315" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.87058823529999996" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="SNg-Gx-30R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                                                <state key="normal" title="Add Product"/>
+                                                <connections>
+                                                    <action selector="AddProduct:" destination="HJe-HP-8sa" eventType="touchUpInside" id="sbM-3N-WON"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Jsf-Vt-HZS" firstAttribute="top" secondItem="NwY-qN-vZr" secondAttribute="bottom" constant="29" id="N64-DB-hL1"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2h4-Kk-LOy" firstAttribute="leading" secondItem="725-WT-UvY" secondAttribute="leading" constant="30" id="5cK-1d-KOc"/>
+                                    <constraint firstItem="sMd-ao-q1J" firstAttribute="top" secondItem="725-WT-UvY" secondAttribute="top" id="99e-Ir-Ppy"/>
+                                    <constraint firstItem="2h4-Kk-LOy" firstAttribute="top" secondItem="725-WT-UvY" secondAttribute="top" constant="30" id="TWT-jx-5IF"/>
+                                    <constraint firstAttribute="trailing" secondItem="2h4-Kk-LOy" secondAttribute="trailing" constant="30" id="Wwl-rZ-6UY"/>
+                                    <constraint firstItem="sMd-ao-q1J" firstAttribute="leading" secondItem="725-WT-UvY" secondAttribute="leading" id="bgZ-Lh-ebv"/>
+                                    <constraint firstAttribute="trailing" secondItem="sMd-ao-q1J" secondAttribute="trailing" id="e5H-bC-qpg"/>
+                                    <constraint firstAttribute="bottom" secondItem="sMd-ao-q1J" secondAttribute="bottom" id="rtg-fs-ctf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sMd-ao-q1J" firstAttribute="width" secondItem="KHq-fj-0tP" secondAttribute="width" id="Pt2-pe-3Dq"/>
+                            <constraint firstItem="725-WT-UvY" firstAttribute="leading" secondItem="bOY-II-zvb" secondAttribute="leading" id="auY-nH-dLT"/>
+                            <constraint firstItem="725-WT-UvY" firstAttribute="trailing" secondItem="bOY-II-zvb" secondAttribute="trailing" id="o2x-6e-5Mn"/>
+                            <constraint firstItem="725-WT-UvY" firstAttribute="top" secondItem="bOY-II-zvb" secondAttribute="top" id="qcs-dy-fYR"/>
+                            <constraint firstItem="725-WT-UvY" firstAttribute="bottom" secondItem="bOY-II-zvb" secondAttribute="bottom" id="yJL-ZP-Ptr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bOY-II-zvb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Product" id="hAC-YI-kfz"/>
+                    <size key="freeformSize" width="375" height="940"/>
+                    <connections>
+                        <outlet property="ProductBrand" destination="uQd-DW-dfv" id="MrZ-Fj-keS"/>
+                        <outlet property="ProductName" destination="s8I-G1-SF8" id="uzg-5x-Akk"/>
+                        <outlet property="RentalDuration" destination="UcX-ZO-yUp" id="JRV-Vf-2iy"/>
+                        <outlet property="RentalPrice" destination="BDZ-Ko-59R" id="VmN-Ko-kx7"/>
+                        <outlet property="Size" destination="vlQ-iE-CfI" id="lfl-wu-8ZM"/>
+                        <outlet property="productImage" destination="Jsf-Vt-HZS" id="7Hd-0T-eyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vi-Jz-2zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="2595.2023988005999"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zGD-kY-YMU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pc2-iM-4Oy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jN3-6N-vow">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pgm-gO-Jeb" kind="relationship" relationship="rootViewController" id="3zf-bC-Bz8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNP-pL-tvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2593" y="2496"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="byp-fP-Nhr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Mi-Jl-hiN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="77Y-VD-bAO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HJe-HP-8sa" kind="relationship" relationship="rootViewController" id="I9Y-uR-SB5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Km-Oi-N8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-641" y="2496"/>
         </scene>
     </scenes>
     <resources>
         <image name="Account" width="16" height="16"/>
+        <image name="Add New Product " width="24" height="25"/>
         <image name="Add2Bag" width="16" height="20"/>
         <image name="Apatite logo" width="20" height="22"/>
         <image name="Apatite logo view" width="142" height="158"/>
         <image name="Cancel" width="12" height="13"/>
         <image name="FAQ" width="21" height="19"/>
+        <image name="ImagePlaceholder" width="640" height="480"/>
         <image name="My details " width="20" height="14"/>
         <image name="My products" width="24" height="20"/>
         <image name="Search " width="18" height="18"/>

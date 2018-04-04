@@ -1,0 +1,6 @@
+framework module Pods_ApatiteTests {
+  umbrella header "Pods-ApatiteTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

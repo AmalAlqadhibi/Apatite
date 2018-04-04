@@ -17,6 +17,7 @@
 		D515B9532056CA8F00CAE5C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */; };
 		D515B95E2056CA8F00CAE5C7 /* ApatiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B95D2056CA8F00CAE5C7 /* ApatiteTests.swift */; };
 		D515B9692056CA8F00CAE5C7 /* ApatiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */; };
+		D51A13BC2073F2A100C9B28F /* AddNewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */; };
 		D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544914F2070BD770033B3A3 /* TabBarViewController.swift */; };
 		D54DA3532067FF9700B9A079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54DA3522067FF9700B9A079 /* Assets.xcassets */; };
 		D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775227205D1B3C00370969 /* Poppins-Light.ttf */; };
@@ -33,6 +34,8 @@
 		D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */; };
 		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
 		D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */; };
+		D5DD04902074C70C00C2A9DA /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */; };
+		D5DD04922074C8D100C2A9DA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD04912074C8D100C2A9DA /* Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,7 @@
 		D515B9642056CA8F00CAE5C7 /* ApatiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApatiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApatiteUITests.swift; sourceTree = "<group>"; };
 		D515B96A2056CA8F00CAE5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProductViewController.swift; sourceTree = "<group>"; };
 		D544914F2070BD770033B3A3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D54DA3522067FF9700B9A079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5775227205D1B3C00370969 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNotLogInViewController.swift; sourceTree = "<group>"; };
+		D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		D5DD04912074C8D100C2A9DA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,9 @@
 				D5A05094207189F400B45F68 /* AddToBagViewController.swift */,
 				D54DA3522067FF9700B9A079 /* Assets.xcassets */,
 				D515B94C2056CA8F00CAE5C7 /* Main.storyboard */,
+				D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */,
+				D5DD04912074C8D100C2A9DA /* Products.swift */,
+				D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */,
 				D5A050902071892000B45F68 /* HomeViewController.swift */,
 				D5A050922071893100B45F68 /* SearchViewController.swift */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
@@ -531,6 +540,8 @@
 				D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */,
 				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
 				D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */,
+				D5DD04902074C70C00C2A9DA /* ProductsTableViewController.swift in Sources */,
+				D5DD04922074C8D100C2A9DA /* Products.swift in Sources */,
 				D5A05097207211E300B45F68 /* AddNewAdminViewController.swift in Sources */,
 				D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */,
 				D5A050932071893100B45F68 /* SearchViewController.swift in Sources */,
@@ -540,6 +551,7 @@
 				D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
 				D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */,
+				D51A13BC2073F2A100C9B28F /* AddNewProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

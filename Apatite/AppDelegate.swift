@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Poppins-Light", size: 20)!]
         
+
+        
         // Override point for customization after application launch.
         return true
     }
