@@ -7,9 +7,25 @@
 //
 
 import Foundation
+import UIKit
 class Products : NSObject {
     var ProductName: String?
-    var DateOfAdd : Date?
+  var ProductImageURL:String?
+  //  var DateOfAdd : Date?
     var Email: String?
     var RentalDuration: String?
+    
+}
+
+class ProductsCell: UITableViewCell{
+    
+    @IBOutlet weak var ProductName: UILabel!
+    @IBOutlet weak var ProductImage: UIImageView!
+    
+    @IBOutlet weak var DateOfAdd: UILabel!
+    
+    @IBOutlet weak var RentalDuration: UILabel!
+    
+    @IBOutlet weak var OwnerEmail: UILabel!
+    
 }

@@ -18,7 +18,8 @@ class AddNewProductViewController: UIViewController {
     @IBOutlet weak var RentalDuration: UITextField!
     @IBOutlet weak var ProductName: UITextField!
     @IBOutlet weak var productImage: UIImageView!
-var selectedImage: UIImage?
+    @IBOutlet weak var OwnerEmail: UITextField!
+    var selectedImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ var selectedImage: UIImage?
         Size.setBorder()
         RentalDuration.setBorder()
         ProductName.setBorder()
-        
+        OwnerEmail.setBorder()
         
         let tapGesture = UITapGestureRecognizer(target: self, action:#selector(AddNewProductViewController.handleSelectProductImageView))
         productImage.addGestureRecognizer(tapGesture)
@@ -45,9 +46,11 @@ var selectedImage: UIImage?
                 }
                 let viewimageUrl = metadata?.downloadURL()?.absoluteString
                 let ref = Database.database().reference().child("Products").childByAutoId()
-ref.setValue(["ProductName":self.ProductName.text,"ProductBrand":self.ProductBrand.text,"Size":self.Size.text,"RentalDuration":self.RentalDuration.text,"RentalPrice":self.RentalPrice.text,"Product image URL": viewimageUrl])
+                ref.setValue(["ProductName":self.ProductName.text,"OwnerEmail":self.OwnerEmail.text,"ProductBrand":self.ProductBrand.text,"Size":self.Size.text,"RentalDuration":self.RentalDuration.text,"RentalPrice":self.RentalPrice.text,"ProductImageURL": viewimageUrl])
             })
         }
+         self.dismiss(animated: true, completion: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {

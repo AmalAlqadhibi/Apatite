@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012FBEE42073DFE8005B6AAD /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012FBEE32073DFE8005B6AAD /* FormViewController.swift */; };
 		34082A2A500E80686210DFBD /* Pods_Apatite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689EBDBAC65E61EF10FB8BD3 /* Pods_Apatite.framework */; };
 		6293D2A80E851DCBC539A13D /* Pods_ApatiteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FC7193BFD06B4DEDD9B28 /* Pods_ApatiteUITests.framework */; };
 		A606EDAD43747AEA6600482A /* Pods_ApatiteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C6BAED0218F6EBB6F75F14 /* Pods_ApatiteTests.framework */; };
@@ -57,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012FBEE32073DFE8005B6AAD /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		35D1690742B82EE998F99147 /* Pods-ApatiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		369B9B04FC9F0FBEB26B02CA /* Pods-ApatiteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteTests/Pods-ApatiteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		467961E02371C907C0164FA6 /* Pods-ApatiteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				D5DD04912074C8D100C2A9DA /* Products.swift */,
 				D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */,
 				D5A050902071892000B45F68 /* HomeViewController.swift */,
-				012FBEE32073DFE8005B6AAD /* FormViewController.swift */,
 				D5A050922071893100B45F68 /* SearchViewController.swift */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
 				D5D47083205C936D001E941F /* GoogleService-Info.plist */,
@@ -541,7 +538,6 @@
 				D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */,
 				D500C276205C27B500637752 /* SignUpViewController.swift in Sources */,
 				D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */,
-				012FBEE42073DFE8005B6AAD /* FormViewController.swift in Sources */,
 				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
 				D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */,
 				D5DD04902074C70C00C2A9DA /* ProductsTableViewController.swift in Sources */,
