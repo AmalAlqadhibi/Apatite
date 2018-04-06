@@ -1,55 +1,50 @@
 //
-//  ProductsTableViewController.swift
+//  MyProductsTableViewController.swift
 //  Apatite
 //
-//  Created by Amal Alqadhibi on 04/04/2018.
+//  Created by Amal Alqadhibi on 05/04/2018.
 //  Copyright © 2018 Amal Alqadhibi. All rights reserved.
 //
 
 import UIKit
-import Firebase
 import FirebaseDatabase
-class ProductsTableViewController: UITableViewController {
-    var refHandle: UInt?
-    var ref: DatabaseReference!
-    var ProductsList = [Products] ()
+import FirebaseAuth
+import FirebaseStorage
+class MyProductsTableViewController: UITableViewController {
+    var email: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       // ref = Database.database().reference()
-               fetchProduct ()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
     func fetchProduct (){
-        refHandle = Database.database().reference().child("Products").observe(.childAdded, with: { (snapshot) in 
-            if let dictionary = snapshot.value as? [String : AnyObject]{
-
+        let uid = Auth.auth().currentUser?.uid
+        Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with:{(snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                self.email = dictionary["email"] as! String
+            }}, withCancel: nil)
+        
+        let ref = Database.database().reference().child("Products")
+        let refHandle = ref.queryOrdered(byChild: "OwnerEmail").queryEnding(atValue: email)
+        
+        
+        refHandle.observe(.value, with: { (snapshot) in
+            for childSnapshot in snapshot.children {
+            if let dictionary = snapshot.value as? [String : AnyObject] {
                 let product = Products()
                 product.ProductName = dictionary["ProductName"] as? String
                 product.ProductImageURL = dictionary["ProductImageURL"] as? String
                 product.Email = dictionary["OwnerEmail"] as? String
                 product.RentalDuration = dictionary["RentalDuration"] as? String
-
-               // product.setValuesForKeys(dictionary)
-                self.ProductsList.append(product)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-
-            }
+                }}
+            
         })
-        
-//        Database.database().reference().child("Products").observe(.childAdded, with: { (snapshot) in
-//            if let dictionary = snapshot.value as? [String : AnyObject]{
-//
-//                                let product = Products()
-//                             //   product.setValuesForKeys(dictionary)
-//                product.ProductName = dictionary["ProductName"] as? String
-//              }
-//        }, withCancel: nil)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,48 +54,25 @@ class ProductsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ProductsList.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell") as! ProductsCell
-       // let cell = ProductsCell()
-        
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-    let product = ProductsList[indexPath.row]
-   cell.OwnerEmail.text = product.Email
-   cell.ProductName.text = product.ProductName
-     cell.RentalDuration.text = product.RentalDuration
-        
-     //   cell.RentalDuration.text = product.ProductImageURL
-        if let ProductImageURL = product.ProductImageURL{
-           let url = NSURL(string: ProductImageURL)
-           // print(url!)
-            let request = URLRequest(url:url! as URL)
-           // let url = URLRequest(url: ProductImageURL)
-            URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
-            //download hit error
-                if error != nil {
-                    print(error)
-                    return
-                }
-                DispatchQueue.main.async {
-                    cell.ProductImage?.image = UIImage(data:data!)
-}
-            }).resume()
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
-
+    */
 
     /*
     // Override to support conditional editing of the table view.

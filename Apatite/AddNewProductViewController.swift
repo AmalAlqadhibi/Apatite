@@ -35,6 +35,9 @@ class AddNewProductViewController: UIViewController {
         productImage.addGestureRecognizer(tapGesture)
         productImage.isUserInteractionEnabled = true
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     @IBAction func AddProduct(_ sender: Any) {
         let uid = Auth.auth().currentUser?.uid
     let storageRef = Storage.storage().reference(forURL: "gs://apatite-d2551.appspot.com/").child("product_image").child(uid!)

@@ -20,6 +20,7 @@
 		D51A13BC2073F2A100C9B28F /* AddNewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */; };
 		D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544914F2070BD770033B3A3 /* TabBarViewController.swift */; };
 		D54DA3532067FF9700B9A079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54DA3522067FF9700B9A079 /* Assets.xcassets */; };
+		D556108C2076C1F4005C5E6E /* MyProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556108B2076C1F4005C5E6E /* MyProductsTableViewController.swift */; };
 		D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775227205D1B3C00370969 /* Poppins-Light.ttf */; };
 		D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5775229205D1CFA00370969 /* Poppins-Bold.ttf */; };
 		D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522B205D6C4D00370969 /* LoginViewController.swift */; };
@@ -30,7 +31,7 @@
 		D5A050932071893100B45F68 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A050922071893100B45F68 /* SearchViewController.swift */; };
 		D5A05095207189F400B45F68 /* AddToBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A05094207189F400B45F68 /* AddToBagViewController.swift */; };
 		D5A05097207211E300B45F68 /* AddNewAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */; };
-		D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */; };
+		D5C00A1E2076C4440081F9F4 /* UserAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C00A1D2076C4440081F9F4 /* UserAccountTableViewController.swift */; };
 		D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */; };
 		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
 		D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */; };
@@ -81,6 +82,7 @@
 		D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProductViewController.swift; sourceTree = "<group>"; };
 		D544914F2070BD770033B3A3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D54DA3522067FF9700B9A079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D556108B2076C1F4005C5E6E /* MyProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductsTableViewController.swift; sourceTree = "<group>"; };
 		D5775227205D1B3C00370969 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		D5775229205D1CFA00370969 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		D577522B205D6C4D00370969 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		D5A050922071893100B45F68 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D5A05094207189F400B45F68 /* AddToBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBagViewController.swift; sourceTree = "<group>"; };
 		D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAdminViewController.swift; sourceTree = "<group>"; };
-		D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountTableViewController.swift; sourceTree = "<group>"; };
+		D5C00A1D2076C4440081F9F4 /* UserAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountTableViewController.swift; sourceTree = "<group>"; };
 		D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNotLogInViewController.swift; sourceTree = "<group>"; };
@@ -175,15 +177,14 @@
 		D515B9472056CA8F00CAE5C7 /* Apatite */ = {
 			isa = PBXGroup;
 			children = (
+				D556108D2076C20F005C5E6E /* UsersView */,
 				D588AD472067D1540077956D /* cell */,
 				D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */,
-				D5C673C120694A7F004CD562 /* UserAccountTableViewController.swift */,
 				D500C275205C27B500637752 /* SignUpViewController.swift */,
 				D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */,
 				D577522B205D6C4D00370969 /* LoginViewController.swift */,
 				D577522D205D7D2400370969 /* ResetPasswordViewController.swift */,
 				D515B94A2056CA8F00CAE5C7 /* ViewController.swift */,
-				D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */,
 				D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */,
 				D544914F2070BD770033B3A3 /* TabBarViewController.swift */,
 				D5A05094207189F400B45F68 /* AddToBagViewController.swift */,
@@ -219,6 +220,16 @@
 				D515B96A2056CA8F00CAE5C7 /* Info.plist */,
 			);
 			path = ApatiteUITests;
+			sourceTree = "<group>";
+		};
+		D556108D2076C20F005C5E6E /* UsersView */ = {
+			isa = PBXGroup;
+			children = (
+				D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */,
+				D5C00A1D2076C4440081F9F4 /* UserAccountTableViewController.swift */,
+				D556108B2076C1F4005C5E6E /* MyProductsTableViewController.swift */,
+			);
+			path = UsersView;
 			sourceTree = "<group>";
 		};
 		D588AD472067D1540077956D /* cell */ = {
@@ -539,6 +550,7 @@
 				D500C276205C27B500637752 /* SignUpViewController.swift in Sources */,
 				D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */,
 				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
+				D5C00A1E2076C4440081F9F4 /* UserAccountTableViewController.swift in Sources */,
 				D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */,
 				D5DD04902074C70C00C2A9DA /* ProductsTableViewController.swift in Sources */,
 				D5DD04922074C8D100C2A9DA /* Products.swift in Sources */,
@@ -548,7 +560,7 @@
 				D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */,
 				D5A050912071892000B45F68 /* HomeViewController.swift in Sources */,
 				D5A05095207189F400B45F68 /* AddToBagViewController.swift in Sources */,
-				D5C673C220694A7F004CD562 /* UserAccountTableViewController.swift in Sources */,
+				D556108C2076C1F4005C5E6E /* MyProductsTableViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
 				D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */,
 				D51A13BC2073F2A100C9B28F /* AddNewProductViewController.swift in Sources */,

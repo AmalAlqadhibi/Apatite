@@ -18,7 +18,7 @@ class UserAccountTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tabBarController?.navigationItem.hidesBackButton = true
        // self.tabBarController?.tabBar.isTranslucent = false
-checkIfUserIsLogIn()
+        self.checkIfUserIsLogIn()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,8 +27,7 @@ checkIfUserIsLogIn()
     }
     func checkIfUserIsLogIn(){
         if Auth.auth().currentUser?.uid == nil {
-            // performSelector(#selector(handleLogout),withObject: nil, aferDelay: 0)}
-            
+          performSelector(#selector(logOut),withObject: nil, aferDelay: 0)
         }
         else {
             let uid = Auth.auth().currentUser?.uid
