@@ -27,7 +27,7 @@ class UserAccountTableViewController: UITableViewController {
     }
     func checkIfUserIsLogIn(){
         if Auth.auth().currentUser?.uid == nil {
-          performSelector(#selector(logOut),withObject: nil, aferDelay: 0)
+//         performSelector(#selector(logOut),withObject: nil, aferDelay: 0)
         }
         else {
             let uid = Auth.auth().currentUser?.uid
@@ -50,7 +50,7 @@ class UserAccountTableViewController: UITableViewController {
                    self.dismiss(animated: true, completion: nil)
              //   performSegue(withIdentifier: "unwindSegue1", sender: self)
                // self.performSegue(withIdentifier: "logOut", sender: nil)
-//                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "logInAndJoin")
+               let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "logInAndJoin")
 //                present(vc, animated: true, completion: nil)
                 
             } catch let error as NSError {

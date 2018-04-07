@@ -31,6 +31,9 @@ Name.setBorder()
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func cancelOnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func AddNewAction(_ sender: Any) {
         if Email.text == nil || Password == nil{

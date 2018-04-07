@@ -11,7 +11,7 @@ import UIKit
 class Products : NSObject {
     var ProductName: String?
   var ProductImageURL:String?
-  //  var DateOfAdd : Date?
+   var DateOfAdd : String?
     var Email: String?
     var RentalDuration: String?
     
@@ -29,3 +29,15 @@ class ProductsCell: UITableViewCell{
     @IBOutlet weak var OwnerEmail: UILabel!
     
 }
+
+class MyProductsCell: UITableViewCell{
+    
+    @IBOutlet weak var ProductImage: UIImageView!
+    @IBOutlet weak var ProductName: UILabel!
+    
+    @IBOutlet weak var RentalDuration: UILabel!
+    
+    @IBOutlet weak var DateOfAdd: UILabel!
+    
+}
+

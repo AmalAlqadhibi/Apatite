@@ -76,6 +76,11 @@ class AddNewProductViewController: UIViewController {
         pickerController.delegate = self
         present(pickerController, animated: true, completion: nil)
     }
+    //Cancel button
+    @IBAction func cancelOnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
 }
 extension AddNewProductViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

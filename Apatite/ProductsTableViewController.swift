@@ -22,17 +22,21 @@ class ProductsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    //Cancel button
+    @IBAction func cancelOnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
     
     func fetchProduct (){
         refHandle = Database.database().reference().child("Products").observe(.childAdded, with: { (snapshot) in 
             if let dictionary = snapshot.value as? [String : AnyObject]{
-
+print(dictionary)
                 let product = Products()
                 product.ProductName = dictionary["ProductName"] as? String
                 product.ProductImageURL = dictionary["ProductImageURL"] as? String
                 product.Email = dictionary["OwnerEmail"] as? String
                 product.RentalDuration = dictionary["RentalDuration"] as? String
-
                // product.setValuesForKeys(dictionary)
                 self.ProductsList.append(product)
                 DispatchQueue.main.async {
@@ -41,7 +45,8 @@ class ProductsTableViewController: UITableViewController {
 
             }
         })
-        
+
+
 //        Database.database().reference().child("Products").observe(.childAdded, with: { (snapshot) in
 //            if let dictionary = snapshot.value as? [String : AnyObject]{
 //
