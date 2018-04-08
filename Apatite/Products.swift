@@ -14,6 +14,7 @@ class Products : NSObject {
    var DateOfAdd : String?
     var Email: String?
     var RentalDuration: String?
+    var ProductID: String?
     
 }
 

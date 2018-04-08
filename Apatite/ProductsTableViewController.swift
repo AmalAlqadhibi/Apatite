@@ -12,11 +12,14 @@ import FirebaseDatabase
 class ProductsTableViewController: UITableViewController {
     var refHandle: UInt?
     var ref: DatabaseReference!
+    //var keyArray:[String] = []
+    var keyArray = [String] ()
     var ProductsList = [Products] ()
     override func viewDidLoad() {
         super.viewDidLoad()
        // ref = Database.database().reference()
                fetchProduct ()
+        tableView.allowsMultipleSelectionDuringEditing = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -31,7 +34,6 @@ class ProductsTableViewController: UITableViewController {
     func fetchProduct (){
         refHandle = Database.database().reference().child("Products").observe(.childAdded, with: { (snapshot) in 
             if let dictionary = snapshot.value as? [String : AnyObject]{
-print(dictionary)
                 let product = Products()
                 product.ProductName = dictionary["ProductName"] as? String
                 product.ProductImageURL = dictionary["ProductImageURL"] as? String
@@ -39,6 +41,10 @@ print(dictionary)
                 product.RentalDuration = dictionary["RentalDuration"] as? String
                // product.setValuesForKeys(dictionary)
                 self.ProductsList.append(product)
+                product.ProductID = snapshot.key
+                self.keyArray.append( product.ProductID!)
+                self.tableView.reloadData()
+                self.ref?.keepSynced(true)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -56,6 +62,15 @@ print(dictionary)
 //              }
 //        }, withCancel: nil)
     }
+//    func store(ProductID: String ,product: Products) {
+//
+//      let ref = Database.database().reference().child("Products")
+//
+//        let refHandle = ref.childByAutoId()
+//        product.ProductID = ref.key
+//        }
+//
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,6 +83,38 @@ print(dictionary)
 //        // #warning Incomplete implementation, return the number of sections
 //        return 0
 //    }
+    
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            let product = ProductsList[indexPath.row]
+//            groceryItem.ref?.removeValue()
+//        }
+//    }
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print(indexPath.row)
+           // getAllKey()
+            print(self.keyArray[indexPath.row])
+            let when = DispatchTime.now() + 1
+            DispatchQueue.main.asyncAfter(deadline: when, execute: {
+                 let ref = Database.database().reference()
+                 ref.child("Products").child(self.keyArray[indexPath.row]).removeValue()
+                self.ProductsList.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .left)
+                self.keyArray.remove(at: indexPath.row)
+                    tableView.reloadData()
+             //   self.keyArray = []
+            })
+               // tableView.deleteRows(at: [indexPath], with: .left) 1
+//            let product = ProductsList[indexPath.row]
+//            product.ref?.removeValue()
+//            tableView.reloadData()
+        }}
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -105,6 +152,17 @@ print(dictionary)
 
         return cell
     }
+//    func getAllKey() {
+//        ref?.child("Products").observeSingleEvent(of: .value , with: { (snapshot) in
+//            for child in snapshot.children{
+//                let snap = child as! DataSnapshot
+//                let key = snap.key
+//                self.keyArray.append(key)
+////                print(key)
+//
+//            }
+//        })
+//    }
 
 
     /*
