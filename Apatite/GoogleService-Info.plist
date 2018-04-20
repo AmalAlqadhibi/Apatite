@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>886156218093-u746rqss0hklnr2h3l02qt8q50shs1ng.apps.googleusercontent.com</string>
+	<string>886156218093-j9lru43m05ucp4g78ijf4g19kordj4jp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.886156218093-u746rqss0hklnr2h3l02qt8q50shs1ng</string>
+	<string>com.googleusercontent.apps.886156218093-j9lru43m05ucp4g78ijf4g19kordj4jp</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBfRUa49ktgiDxvHsEQjXFaSlbVUyFBsbM</string>
 	<key>GCM_SENDER_ID</key>
@@ -23,17 +23,17 @@
 	<key>STORAGE_BUCKET</key>
 	<string>apatite-d2551.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:886156218093:ios:f26b0043d2a8d7db</string>
+	<string>1:886156218093:ios:4b1265a219ba9db4</string>
 	<key>DATABASE_URL</key>
 	<string>https://apatite-d2551.firebaseio.com</string>
 </dict>

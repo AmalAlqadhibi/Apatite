@@ -52,13 +52,12 @@ class LoginViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
  let ref = Database.database().reference()
         //check if the textfield empty
-        if self.Email.text == "" || self.Password.text == "" {
+        if self.Email.text == nil || self.Password.text == nil {
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields
             
-            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Oops!", message: "Please enter your Email and password.", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
-            
             self.present(alertController, animated: true, completion: nil)
         } else {
             Auth.auth().signIn(withEmail: self.Email.text!, password: self.Password.text!) { (user, error) in
@@ -69,22 +68,11 @@ class LoginViewController: UIViewController {
                             let accountType = dictionary["accountType"] as! String
                             if  accountType == "User"{
                                 self.performSegue(withIdentifier: "UserAccount", sender: nil)
-                                
-                            }else{
+                            } else{
                                   self.performSegue(withIdentifier: "Admin", sender: nil)
                             }
-                          
                         }}, withCancel: nil)
-                    
-                    //ref.child("users").child(uid!).queryEqual(toValue: uid?)
-//
-                    //Print into the console if successfully logged in
                     print("You have successfully logged in")
-              //   self.performSegue(withIdentifier: "UserAccount", sender: nil)
-                    //Go to the HomeViewController if the login is sucessful
-                 //  let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserAccount")
-                 
-               //   self.present(vc!, animated: true, completion: nil)
                 }
                 else {
                     //Tells the user that there is an error and then gets firebase to tell them the error
@@ -98,14 +86,4 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

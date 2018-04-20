@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DF29A2B55F27ABC85A02F5C31646A478"
+               BlueprintIdentifier = "CFA10D9C587D85154F1201E64A74D6CC"
                BuildableName = "Pods_Apatite.framework"
                BlueprintName = "Pods-Apatite"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DF29A2B55F27ABC85A02F5C31646A478"
+            BlueprintIdentifier = "CFA10D9C587D85154F1201E64A74D6CC"
             BuildableName = "Pods_Apatite.framework"
             BlueprintName = "Pods-Apatite"
             ReferencedContainer = "container:Pods.xcodeproj">

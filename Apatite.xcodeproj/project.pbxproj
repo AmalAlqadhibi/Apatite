@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01F38764207F3CF600A34149 /* HomeViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F38763207F3CF600A34149 /* HomeViewControler.swift */; };
+		01F38766207F3D0500A34149 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F38765207F3D0500A34149 /* FormViewController.swift */; };
+		01F38768207F3E2900A34149 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F38767207F3E2900A34149 /* SearchViewController.swift */; };
 		34082A2A500E80686210DFBD /* Pods_Apatite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689EBDBAC65E61EF10FB8BD3 /* Pods_Apatite.framework */; };
 		6293D2A80E851DCBC539A13D /* Pods_ApatiteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FC7193BFD06B4DEDD9B28 /* Pods_ApatiteUITests.framework */; };
 		A606EDAD43747AEA6600482A /* Pods_ApatiteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C6BAED0218F6EBB6F75F14 /* Pods_ApatiteTests.framework */; };
+		CA35F4B9208814BE00148945 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35F4B8208814BE00148945 /* Extention.swift */; };
 		D500C276205C27B500637752 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500C275205C27B500637752 /* SignUpViewController.swift */; };
 		D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */; };
 		D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B94A2056CA8F00CAE5C7 /* ViewController.swift */; };
@@ -18,6 +22,8 @@
 		D515B95E2056CA8F00CAE5C7 /* ApatiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B95D2056CA8F00CAE5C7 /* ApatiteTests.swift */; };
 		D515B9692056CA8F00CAE5C7 /* ApatiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */; };
 		D51A13BC2073F2A100C9B28F /* AddNewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */; };
+		D5259CF62087A52200A68CA4 /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5259CF52087A52200A68CA4 /* ChangePassViewController.swift */; };
+		D5259CF82087A56C00A68CA4 /* MyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5259CF72087A56C00A68CA4 /* MyDetailsViewController.swift */; };
 		D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544914F2070BD770033B3A3 /* TabBarViewController.swift */; };
 		D54DA3532067FF9700B9A079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54DA3522067FF9700B9A079 /* Assets.xcassets */; };
 		D556108C2076C1F4005C5E6E /* MyProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556108B2076C1F4005C5E6E /* MyProductsTableViewController.swift */; };
@@ -27,16 +33,15 @@
 		D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577522D205D7D2400370969 /* ResetPasswordViewController.swift */; };
 		D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D588AD482067D1A50077956D /* TableViewCell.swift */; };
 		D588AD4B2067D1A50077956D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D588AD492067D1A50077956D /* TableViewCell.xib */; };
-		D5A050912071892000B45F68 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A050902071892000B45F68 /* HomeViewController.swift */; };
-		D5A050932071893100B45F68 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A050922071893100B45F68 /* SearchViewController.swift */; };
+		D59A6A93207B6EA8008FF417 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D59A6A92207B6EA8008FF417 /* GoogleService-Info.plist */; };
 		D5A05095207189F400B45F68 /* AddToBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A05094207189F400B45F68 /* AddToBagViewController.swift */; };
 		D5A05097207211E300B45F68 /* AddNewAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */; };
 		D5C00A1E2076C4440081F9F4 /* UserAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C00A1D2076C4440081F9F4 /* UserAccountTableViewController.swift */; };
 		D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */; };
-		D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D47083205C936D001E941F /* GoogleService-Info.plist */; };
 		D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */; };
 		D5DD04902074C70C00C2A9DA /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */; };
 		D5DD04922074C8D100C2A9DA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD04912074C8D100C2A9DA /* Products.swift */; };
+		D5EE5EE3207F36BC0064B5A6 /* ProductsRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EE5EE2207F36BC0064B5A6 /* ProductsRequestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01F38763207F3CF600A34149 /* HomeViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControler.swift; sourceTree = "<group>"; };
+		01F38765207F3D0500A34149 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		01F38767207F3E2900A34149 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		35D1690742B82EE998F99147 /* Pods-ApatiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		369B9B04FC9F0FBEB26B02CA /* Pods-ApatiteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteTests/Pods-ApatiteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		467961E02371C907C0164FA6 /* Pods-ApatiteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApatiteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApatiteUITests/Pods-ApatiteUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +74,7 @@
 		70B80243B25B5C9220676BEA /* Pods-Apatite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apatite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apatite/Pods-Apatite.release.xcconfig"; sourceTree = "<group>"; };
 		A17FC7193BFD06B4DEDD9B28 /* Pods_ApatiteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApatiteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C6BAED0218F6EBB6F75F14 /* Pods_ApatiteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApatiteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA35F4B8208814BE00148945 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		D500C275205C27B500637752 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D515B9452056CA8F00CAE5C7 /* Apatite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apatite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +89,8 @@
 		D515B9682056CA8F00CAE5C7 /* ApatiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApatiteUITests.swift; sourceTree = "<group>"; };
 		D515B96A2056CA8F00CAE5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProductViewController.swift; sourceTree = "<group>"; };
+		D5259CF52087A52200A68CA4 /* ChangePassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		D5259CF72087A56C00A68CA4 /* MyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailsViewController.swift; sourceTree = "<group>"; };
 		D544914F2070BD770033B3A3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D54DA3522067FF9700B9A079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D556108B2076C1F4005C5E6E /* MyProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductsTableViewController.swift; sourceTree = "<group>"; };
@@ -89,16 +100,15 @@
 		D577522D205D7D2400370969 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		D588AD482067D1A50077956D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D588AD492067D1A50077956D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		D5A050902071892000B45F68 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D5A050922071893100B45F68 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D59A6A92207B6EA8008FF417 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5A05094207189F400B45F68 /* AddToBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBagViewController.swift; sourceTree = "<group>"; };
 		D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAdminViewController.swift; sourceTree = "<group>"; };
 		D5C00A1D2076C4440081F9F4 /* UserAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountTableViewController.swift; sourceTree = "<group>"; };
 		D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
-		D5D47083205C936D001E941F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNotLogInViewController.swift; sourceTree = "<group>"; };
 		D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		D5DD04912074C8D100C2A9DA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		D5EE5EE2207F36BC0064B5A6 /* ProductsRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A6BBBF207F9EBE0046AEED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				01F38763207F3CF600A34149 /* HomeViewControler.swift */,
+				01F38765207F3D0500A34149 /* FormViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		7289372DB0EB7971235131A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,26 +196,20 @@
 		D515B9472056CA8F00CAE5C7 /* Apatite */ = {
 			isa = PBXGroup;
 			children = (
+				D5EE5EE4207F376E0064B5A6 /* AdminView */,
 				D556108D2076C20F005C5E6E /* UsersView */,
 				D588AD472067D1540077956D /* cell */,
 				D515B9482056CA8F00CAE5C7 /* AppDelegate.swift */,
-				D500C275205C27B500637752 /* SignUpViewController.swift */,
-				D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */,
-				D577522B205D6C4D00370969 /* LoginViewController.swift */,
-				D577522D205D7D2400370969 /* ResetPasswordViewController.swift */,
 				D515B94A2056CA8F00CAE5C7 /* ViewController.swift */,
-				D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */,
 				D544914F2070BD770033B3A3 /* TabBarViewController.swift */,
 				D5A05094207189F400B45F68 /* AddToBagViewController.swift */,
 				D54DA3522067FF9700B9A079 /* Assets.xcassets */,
+				CA35F4B8208814BE00148945 /* Extention.swift */,
 				D515B94C2056CA8F00CAE5C7 /* Main.storyboard */,
-				D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */,
-				D5DD04912074C8D100C2A9DA /* Products.swift */,
-				D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */,
-				D5A050902071892000B45F68 /* HomeViewController.swift */,
-				D5A050922071893100B45F68 /* SearchViewController.swift */,
+				01F38767207F3E2900A34149 /* SearchViewController.swift */,
+				01A6BBBF207F9EBE0046AEED /* Home */,
 				D515B9512056CA8F00CAE5C7 /* LaunchScreen.storyboard */,
-				D5D47083205C936D001E941F /* GoogleService-Info.plist */,
+				D59A6A92207B6EA8008FF417 /* GoogleService-Info.plist */,
 				D515B9542056CA8F00CAE5C7 /* Info.plist */,
 				D5775227205D1B3C00370969 /* Poppins-Light.ttf */,
 				D5775229205D1CFA00370969 /* Poppins-Bold.ttf */,
@@ -227,7 +240,13 @@
 			children = (
 				D5C7A208206102DB00E08CD0 /* UserAccountViewController.swift */,
 				D5C00A1D2076C4440081F9F4 /* UserAccountTableViewController.swift */,
+				D577522B205D6C4D00370969 /* LoginViewController.swift */,
+				D5259CF72087A56C00A68CA4 /* MyDetailsViewController.swift */,
+				D5259CF52087A52200A68CA4 /* ChangePassViewController.swift */,
+				D500C275205C27B500637752 /* SignUpViewController.swift */,
+				D577522D205D7D2400370969 /* ResetPasswordViewController.swift */,
 				D556108B2076C1F4005C5E6E /* MyProductsTableViewController.swift */,
+				D5D83364206E71C50099B965 /* AccountNotLogInViewController.swift */,
 			);
 			path = UsersView;
 			sourceTree = "<group>";
@@ -239,6 +258,18 @@
 				D588AD492067D1A50077956D /* TableViewCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		D5EE5EE4207F376E0064B5A6 /* AdminView */ = {
+			isa = PBXGroup;
+			children = (
+				D51A13BB2073F2A100C9B28F /* AddNewProductViewController.swift */,
+				D5DD048F2074C70C00C2A9DA /* ProductsTableViewController.swift */,
+				D5DD04912074C8D100C2A9DA /* Products.swift */,
+				D5A05096207211E300B45F68 /* AddNewAdminViewController.swift */,
+				D5EE5EE2207F36BC0064B5A6 /* ProductsRequestTableViewController.swift */,
+			);
+			path = AdminView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,9 +391,9 @@
 				D515B9532056CA8F00CAE5C7 /* LaunchScreen.storyboard in Resources */,
 				D577522A205D1CFB00370969 /* Poppins-Bold.ttf in Resources */,
 				D588AD4B2067D1A50077956D /* TableViewCell.xib in Resources */,
+				D59A6A93207B6EA8008FF417 /* GoogleService-Info.plist in Resources */,
 				D5775228205D1BF400370969 /* Poppins-Light.ttf in Resources */,
 				D54DA3532067FF9700B9A079 /* Assets.xcassets in Resources */,
-				D5D47084205C936D001E941F /* GoogleService-Info.plist in Resources */,
 				D515B94E2056CA8F00CAE5C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +506,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Letters/Letters.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -483,6 +515,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Letters.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -549,6 +582,7 @@
 				D577522C205D6C4D00370969 /* LoginViewController.swift in Sources */,
 				D500C276205C27B500637752 /* SignUpViewController.swift in Sources */,
 				D54491502070BD770033B3A3 /* TabBarViewController.swift in Sources */,
+				D5259CF62087A52200A68CA4 /* ChangePassViewController.swift in Sources */,
 				D577522E205D7D2400370969 /* ResetPasswordViewController.swift in Sources */,
 				D5C00A1E2076C4440081F9F4 /* UserAccountTableViewController.swift in Sources */,
 				D588AD4A2067D1A50077956D /* TableViewCell.swift in Sources */,
@@ -556,13 +590,17 @@
 				D5DD04922074C8D100C2A9DA /* Products.swift in Sources */,
 				D5A05097207211E300B45F68 /* AddNewAdminViewController.swift in Sources */,
 				D5D83365206E71C50099B965 /* AccountNotLogInViewController.swift in Sources */,
-				D5A050932071893100B45F68 /* SearchViewController.swift in Sources */,
+				01F38768207F3E2900A34149 /* SearchViewController.swift in Sources */,
+				D5EE5EE3207F36BC0064B5A6 /* ProductsRequestTableViewController.swift in Sources */,
 				D515B94B2056CA8F00CAE5C7 /* ViewController.swift in Sources */,
-				D5A050912071892000B45F68 /* HomeViewController.swift in Sources */,
+				CA35F4B9208814BE00148945 /* Extention.swift in Sources */,
 				D5A05095207189F400B45F68 /* AddToBagViewController.swift in Sources */,
+				D5259CF82087A56C00A68CA4 /* MyDetailsViewController.swift in Sources */,
+				01F38764207F3CF600A34149 /* HomeViewControler.swift in Sources */,
 				D556108C2076C1F4005C5E6E /* MyProductsTableViewController.swift in Sources */,
 				D515B9492056CA8F00CAE5C7 /* AppDelegate.swift in Sources */,
 				D5C7A209206102DB00E08CD0 /* UserAccountViewController.swift in Sources */,
+				01F38766207F3D0500A34149 /* FormViewController.swift in Sources */,
 				D51A13BC2073F2A100C9B28F /* AddNewProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,7 +769,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Apatite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Apatite.Apatite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -746,7 +786,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Apatite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Apatite.Apatite;
 				PRODUCT_NAME = "$(TARGET_NAME)";

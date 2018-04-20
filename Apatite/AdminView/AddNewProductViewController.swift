@@ -12,9 +12,14 @@ import FirebaseDatabase
 import FirebaseStorage
 class AddNewProductViewController: UIViewController {
     
-    @IBOutlet weak var RentalPrice: UITextField!
-    @IBOutlet weak var ProductBrand: UITextField!
-    @IBOutlet weak var Size: UITextField!
+ 
+    @IBOutlet weak var ProductDescrip: UITextView!
+    // @IBOutlet weak var ProductDescrip: UITextView!
+    @IBOutlet weak var RentalPriceFor2d: UITextField!
+    //@IBOutlet weak var ProductDescrip: UITextField!
+    @IBOutlet weak var RentalPriceFor7d: UITextField!
+    @IBOutlet weak var RentalPriceFor15d: UITextField!
+    @IBOutlet weak var RentalPriceFor3m: UITextField!
     @IBOutlet weak var RentalDuration: UITextField!
     @IBOutlet weak var ProductName: UITextField!
     @IBOutlet weak var productImage: UIImageView!
@@ -23,10 +28,12 @@ class AddNewProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        RentalPrice.setBorder()
-        ProductBrand.setBorder()
+    
+        RentalPriceFor2d.setBorder()
+        RentalPriceFor7d.setBorder()
+        RentalPriceFor15d.setBorder()
+        RentalPriceFor3m.setBorder()
         ProductName.setBorder()
-        Size.setBorder()
         RentalDuration.setBorder()
         ProductName.setBorder()
         OwnerEmail.setBorder()
@@ -40,8 +47,8 @@ class AddNewProductViewController: UIViewController {
     }
     @IBAction func AddProduct(_ sender: Any) {
         let uid = Auth.auth().currentUser?.uid
-    let storageRef = Storage.storage().reference(forURL: "gs://apatite-d2551.appspot.com/").child("product_image").child(uid!)
-        let newStorage = storageRef.child(uid!)
+    let storageRef = Storage.storage().reference(forURL: "gs://apatite-d2551.appspot.com/").child("product_image")//.child(uid!)
+    //    let newStorage = storageRef.child(uid!)
         if let viewimage = selectedImage, let imageData = UIImageJPEGRepresentation(viewimage, 0.1){
             storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
                 if error != nil{
@@ -49,7 +56,7 @@ class AddNewProductViewController: UIViewController {
                 }
                 let viewimageUrl = metadata?.downloadURL()?.absoluteString
                 let ref = Database.database().reference().child("Products").childByAutoId()
-                ref.setValue(["ProductName":self.ProductName.text,"OwnerEmail":self.OwnerEmail.text,"ProductBrand":self.ProductBrand.text,"Size":self.Size.text,"RentalDuration":self.RentalDuration.text,"RentalPrice":self.RentalPrice.text,"ProductImageURL": viewimageUrl])
+                ref.setValue(["ProductName":self.ProductName.text,"OwnerEmail":self.OwnerEmail.text,"ProductDescrip":self.ProductDescrip.text,"RentalDuration":self.RentalDuration.text,"RentalPriceFor2D":self.RentalPriceFor2d.text,"RentalPriceFor7D":self.RentalPriceFor7d.text,"RentalPriceFor15D":self.RentalPriceFor15d.text,"RentalPriceFor3M":self.RentalPriceFor3m.text,"ProductImageURL": viewimageUrl])
             })
         }
          self.dismiss(animated: true, completion: nil)
@@ -80,7 +87,6 @@ class AddNewProductViewController: UIViewController {
     @IBAction func cancelOnClick(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
 }
 extension AddNewProductViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

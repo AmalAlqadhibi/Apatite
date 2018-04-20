@@ -58,6 +58,7 @@ Name.setBorder()
                     let uid = user?.uid
                     let ref = Database.database().reference()
                     ref.child("users").child(uid!).setValue(info)
+                       self.dismiss(animated: true, completion: nil)
                 }
        })}
         }
