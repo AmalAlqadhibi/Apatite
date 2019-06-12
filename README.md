@@ -1,0 +1,3 @@
+# Apatite
+The “Apatite” is a standalone application for Saudi Arabia women which allow them to rent what they want and add her fashion which want to be rent but it doesn't possible to buy. It provides help for most of women in kingdom of Saudi Arabia to get the luxury look without spending much money. Also, save their money to exploit it for another important thing more than fashion.
+Further, provides chance for women to rentals her fashion to other women which they want it. The application should be free download and usable for the women which inside kingdom of Saudi Arabia currently in this time. In the future, it should be extending it to any Arabic country.
